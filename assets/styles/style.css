@@ -39,9 +39,8 @@ body {
   font-family: var(--font-fam);
 }
 
-
-#burger{
-    display: none;
+#burger {
+  display: none;
 }
 /************
 Declaration de variables
@@ -90,28 +89,23 @@ nav > ul {
 }
 #inscription {
   background-color: var(--color-secondary);
-  color: var(--color-hover-nav);
+  color: var(--color-white);
   padding: var(--padding-bouton);
   border-radius: var(--border-radius);
 }
 
-.nav-items{
-    padding: var(--padding-bouton)
+.nav-items {
+  padding: var(--padding-bouton);
 }
-.nav-items:hover{
-    background-color: var(--color-hover-nav);
-    border-radius: var(--border-radius);
+.nav-items:hover {
+  background-color: var(--color-hover-nav);
+  border-radius: var(--border-radius);
 }
-
 
 .head-main-right {
-    display: flex;
-    align-items: center;
-    
-  }
-  
-  
-
+  display: flex;
+  align-items: center;
+}
 
 /********
  disposition header main
@@ -122,7 +116,7 @@ nav > ul {
 
 .head-main h1 {
   font-size: 1.2rem;
-  font-weight: normal;
+  font-weight: bolder;
   margin-bottom: 0.3em;
 }
 .head-main h2 {
@@ -156,19 +150,18 @@ nav > ul {
 Disposition du Lyaout principale (article de ventes) 
 *******************/
 
-main{
-    height: calc(100vh-8vh-8vh);
-}
+
 
 .grid-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-row: 1fr 1fr;
-  gap: 1rem;
+  grid-auto-rows: auto;
+  gap: 1.4rem;
   padding: 1rem;
 }
 article {
   border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -191,6 +184,7 @@ article img {
   padding: 1em;
   border: 1px solid var(--color-border);
   border-radius: var(--border-radius);
+  object-fit: contain;
 }
 
 .flex-info-btn {
@@ -213,7 +207,7 @@ button {
 }
 #cta {
   background-color: var(--color-cta);
-  color: var(--color-hover-nav);
+  color: var(--color-white);
 }
 
 #cta:hover {
@@ -240,11 +234,16 @@ footer ul {
   width: 100%;
   justify-content: center;
 }
-footer ul li:hover {
-  cursor: pointer;
-  background-color: var(--color-hover-nav);
+
+footer ul li {
   padding: 0.6em;
   border-radius: 4px;
+}
+
+footer ul li:nth-child(n + 2):hover {
+  cursor: pointer;
+  background-color: var(--color-hover-nav);
+
   color: var(--color-text);
 }
 
@@ -256,18 +255,18 @@ footer ul li:hover {
   color: var(--color-hover-nav);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
+main{
+  max-width: 600px;
+  margin: auto;
+}
   .grid-container {
     grid-template-columns: 1fr;
-
   }
-  article img{
-    
+  article img {
+    height: 35vh;
   }
   .item-2 {
-    grid-column: auto;
-  }
-  .item-4 {
     grid-column: auto;
   }
 
@@ -276,14 +275,20 @@ footer ul li:hover {
   .item-4 {
     display: none;
   }
-
-  
-
   /* nav */
-  nav ul{
+  nav ul {
     display: none;
   }
-  #burger{
+  #burger {
     display: block;
+  }
+
+  .head-main-right {
+    display: none;
+  }
+
+
+  footer{
+    margin-top: 1rem;
   }
 }
