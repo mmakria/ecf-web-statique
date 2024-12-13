@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ecf - Web Statique</title>
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="head-nav">
+      <img src="./assets/images/logo.png" alt="logo boutique" />
+
+      <nav>
+        <ul>
+          <li><a href="#" class="nav-items" >Produits</a></li>
+          <li><a href="#"class="nav-items" >Contact</a></li>
+          <li><a href="#" id="connexion">Connexion</a></li>
+          <li><a href="#" id="inscription">Inscription</a></li>
+        </ul>
+        <img id="burger" src="./assets/images/menu-burger-horizontal-bold.svg" alt="">
+      </nav>
+    </header>
+
+    <main>
+
+      <header class="head-main">
+        <h1>Produits</h1>
+        <div class="head-main-bottom">
+          <h2><a href="">Informatique</a> > <a href="">Reconditionné</a></h2>
+          <div class="head-main-right">
+            <img src="./assets/images/arrow-back.svg" alt="arrow back" />
+            <a href="#" >Précédent</a>
+          </div>
+        </div>
+      </header>
+
+      <section class="grid-container">
+        <article class="items item-1">
+          <img src="./assets/images/macbook-air.jpg" alt="Macbook air" />
+          <div class="flex-info-btn">
+            <div class="card-info card-info-1">
+              <h3>MacBook Air</h3>
+              <p>1600 €</p>
+            </div>
+            <button id="cta">Ajouter</button>
+          </div>
+        </article>
+        <article class="items item-2">
+          <img src="./assets/images/odyssey.jpg" alt="Samsung Odysse" />
+
+          <div class="flex-info-btn">
+            <div class="card-info card-info-2">
+              <h3>Samsung Odyssey G9</h3>
+              <p>1300 €</p>
+            </div>
+            <button id="cta">Ajouter</button>
+          </div>
+        </article>
+
+        <article class="items item-3">
+          <img src="./assets/images/rog-stryx.jpg" alt="Asus ROG Stryx" />
+          <div class="flex-info-btn">
+            <div class="card-info card-info-3">
+              <h3>Asus Rog Stryx</h3>
+              <p>1999 €</p>
+            </div>
+
+            <button id="cta">Ajouter</button>
+          </div>
+        </article>
+        <article class="items item-4">
+          <img src="./assets/images/triple-screen.jpg" alt="Double ecran" />
+          <div class="flex-info-btn">
+            <div class="card-info card-info-4">
+              <h3>Double écran 14"</h3>
+              <p>399 €</p>
+            </div>
+            <button id="indisponible">Indisponible</button>
+          </div>
+        </article>
+
+        <article class="items item-5">
+          <img src="./assets/images/vivobook.png" alt="Asus Vivobook" />
+
+          <div class="flex-info-btn">
+            <div class="card-info card-info-5">
+              <h3>Asus Vivobook</h3>
+              <p>1300 €</p>
+            </div>
+
+            <button id="indisponible">Indisponible</button>
+          </div>
+        </article>
+
+        <article class="items item-6">
+          <img src="./assets/images/thinkpad.jpg" alt="Thinkpad X1" />
+          <div class="flex-info-btn">
+            <div class="card-info card-info-6">
+              <h3>ThinkPad X1 Carbon</h3>
+              <p>1499 €</p>
+            </div>
+            <button id="cta">Ajouter</button>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <ul>
+        <li><a href="#" id="actual">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">...</a></li>
+        <li><a href="#">19</a></li>
+        <li><a href="#">20</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>
